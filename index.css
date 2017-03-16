@@ -28,8 +28,7 @@
 }
 
 .hake-draft-editor {
-    border-left: 1px solid #f5f5f5;
-    border-right: 1px solid #f5f5f5;
+    border-left: 1px solid #f5f5f5;    
     padding-left: 10px;
     min-height: 160px
 }
