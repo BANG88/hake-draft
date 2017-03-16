@@ -10,7 +10,6 @@
 
 .hake-draft-toolbar .rdw-option-wrapper {
     border: none;
-    margin: 0;
     min-width: 20px;
 }
 
@@ -23,8 +22,9 @@
     left: -1px;
 }
 
-.hake-draft-toolbar .rdw-colorpicker-modal .rdw-colorpicker-option {
-    margin: 3px;
+.hake-draft-toolbar .rdw-option-active {
+    border-radius: 0;
+    border-bottom: 1px solid #4CAF50 !important;
 }
 
 .hake-draft-editor {
