@@ -1,0 +1,35 @@
+.hake-draft-wrapper * {
+    box-sizing: initial
+}
+
+.hake-draft-toolbar {
+    padding: 0;
+    border: none;
+    border-radius: 0
+}
+
+.hake-draft-toolbar .rdw-option-wrapper {
+    border: none;
+    margin: 0;
+    min-width: 20px;
+}
+
+.hake-draft-toolbar .rdw-dropdown-optionwrapper {
+    width: 100%;
+    background: white;
+    border-radius: 0;
+    max-height: 300px;
+    overflow: auto;
+    left: -1px;
+}
+
+.hake-draft-toolbar .rdw-colorpicker-modal .rdw-colorpicker-option {
+    margin: 3px;
+}
+
+.hake-draft-editor {
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+    padding-left: 10px;
+    min-height: 160px
+}
