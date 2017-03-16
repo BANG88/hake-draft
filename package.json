@@ -1,6 +1,6 @@
 {
   "name": "hake-draft",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A wrapper Component for react-draft-wysiwyg",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/bang88/hake-draft.git"
   },
-  "keywords": ["react draft editor", "editor"],
+  "keywords": [
+    "react draft editor",
+    "editor"
+  ],
   "author": "bang88",
   "license": "MIT",
   "bugs": {
