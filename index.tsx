@@ -230,7 +230,8 @@ export interface DraftProps {
             redo: { icon: 'redo', className?: string }
         }>
     }>
-
+    /** */
+    locale?: string
     [key: string]: any
 }
 export interface DraftState {
@@ -255,7 +256,8 @@ class Draft extends React.Component<DraftProps, DraftState> {
             list: {
                 options: ['unordered', 'ordered']
             }
-        }
+        },
+        locale: 'zh'
 
     }
     render() {

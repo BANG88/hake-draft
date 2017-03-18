@@ -31,6 +31,6 @@
     "draft-js": "^0.10.0",
     "draftjs-to-html": "^0.7.0",
     "html-to-draftjs": "^0.1.0-beta7",
-    "react-draft-wysiwyg": "^1.7.8"
+    "react-draft-wysiwyg": "^1.8.0"
   }
 }
