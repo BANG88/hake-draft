@@ -1,6 +1,6 @@
 {
   "name": "hake-draft",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A wrapper Component for react-draft-wysiwyg",
   "main": "index.js",
   "scripts": {
