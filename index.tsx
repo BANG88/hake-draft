@@ -267,6 +267,7 @@ class Draft extends React.Component<DraftProps, DraftState> {
             toolbarClassName="hake-draft-toolbar"
             placeholder="写点什么..."
             toolbar={this.props.toolbar}
+            locale={this.props.locale}
             {...this.props}
         />
 
