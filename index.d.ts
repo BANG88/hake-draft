@@ -3,9 +3,13 @@
 import * as React from 'react';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import './index.css';
-import draftToHtml from 'draftjs-to-html';
 import { EditorState } from 'draft-js';
-export { draftToHtml };
+/**
+ * convert an editor state to html
+ * @param input any
+ * @param options DraftToHtml options
+ */
+export declare const draftToHtml: (input: any, ...options: any[]) => any;
 /**
  * convert html to Draft State
  * @param content your contents
@@ -272,6 +276,8 @@ export interface DraftProps {
             };
         }>;
     }>;
+    /** */
+    locale?: string;
     [key: string]: any;
 }
 export interface DraftState {

@@ -23,9 +23,23 @@ var react_draft_wysiwyg_1 = require("react-draft-wysiwyg");
 require("react-draft-wysiwyg/dist/react-draft-wysiwyg.css");
 require("./index.css");
 var draftjs_to_html_1 = require("draftjs-to-html");
-exports.draftToHtml = draftjs_to_html_1.default;
 var html_to_draftjs_1 = require("html-to-draftjs");
 var draft_js_1 = require("draft-js");
+/**
+ * convert an editor state to html
+ * @param input any
+ * @param options DraftToHtml options
+ */
+exports.draftToHtml = function (input) {
+    var options = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        options[_i - 1] = arguments[_i];
+    }
+    if (typeof input === 'string') {
+        return input;
+    }
+    return draftjs_to_html_1.default.apply(void 0, [input].concat(options));
+};
 /**
  * convert html to Draft State
  * @param content your contents
@@ -65,7 +79,7 @@ var Draft = (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Draft.prototype.render = function () {
-        return React.createElement(react_draft_wysiwyg_1.Editor, __assign({ wrapperClassName: "hake-draft-wrapper", editorClassName: "hake-draft-editor", toolbarClassName: "hake-draft-toolbar", placeholder: "写点什么...", toolbar: this.props.toolbar }, this.props));
+        return React.createElement(react_draft_wysiwyg_1.Editor, __assign({ wrapperClassName: "hake-draft-wrapper", editorClassName: "hake-draft-editor", toolbarClassName: "hake-draft-toolbar", placeholder: "写点什么...", toolbar: this.props.toolbar, locale: this.props.locale }, this.props));
     };
     return Draft;
 }(React.Component));
@@ -81,7 +95,8 @@ Draft.defaultProps = {
         list: {
             options: ['unordered', 'ordered']
         }
-    }
+    },
+    locale: 'zh'
 };
 exports.default = Draft;
 //# sourceMappingURL=index.js.map

@@ -2,15 +2,20 @@ import * as React from 'react'
 import { Editor } from 'react-draft-wysiwyg'
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css'
 import './index.css'
-import draftToHtml from 'draftjs-to-html'
+import DraftToHtml from 'draftjs-to-html'
 import HtmlToDraft from 'html-to-draftjs'
 import { EditorState, ContentState, convertFromHTML } from 'draft-js'
 
-export {
-    /**
-     * convert draft state to html
-     */
-    draftToHtml,
+/**
+ * convert an editor state to html
+ * @param input any
+ * @param options DraftToHtml options
+ */
+export const draftToHtml = (input: any, ...options) => {
+    if (typeof input === 'string') {
+        return input
+    }
+    return DraftToHtml(input, ...options)
 }
 
 /**
