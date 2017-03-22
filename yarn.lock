@@ -119,9 +119,9 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-react-draft-wysiwyg@^1.8.3:
-  version "1.8.3"
-  resolved "https://registry.yarnpkg.com/react-draft-wysiwyg/-/react-draft-wysiwyg-1.8.3.tgz#31b8ad56f9d20b7bc4f9bdd29445c0d0e079a503"
+react-draft-wysiwyg@^1.8.4:
+  version "1.8.4"
+  resolved "https://registry.yarnpkg.com/react-draft-wysiwyg/-/react-draft-wysiwyg-1.8.4.tgz#f0c43947d16dcd601a1b4f9a2537ded0dd15fff8"
   dependencies:
     classnames "^2.2.5"
     draftjs-utils "^0.7.0"
